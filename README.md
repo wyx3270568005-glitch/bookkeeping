@@ -1,12 +1,18 @@
 # bookkeeping
 
-`bookkeeping` 是一个用于自动记账的 Agent Skill。它根据用户的自然语言、结构化字段或包含金额的图片，推断账本记录字段，并写入用户指定的飞书多维表格。
-
-详细执行规则以 [SKILL.md](SKILL.md) 为准。
+`bookkeeping` 是一个用于自动记账的 Agent Skill。它根据用户的自然语言、结构化字段或包含金额的图片，推断账本记录字段，并写入用户指定的飞书多维表格。它最初由作者在Hermes Agent上创建，Hermes安装在绿联云DX4600的docker上。作者把Hermes绑定到了飞书和微信，作为聊天机器人，通过聊天窗口发送自然语言、结构化字段或图片，Agent基于skill.md命中为记账请求后，都能完成记账。在使用过程中，用户可以随时纠正agent，让skill不断进化，做到了真正的“越用越流畅，越用越懂你”（不是
 
 ## 快速安装
 
-把本目录作为一个 Codex/Agent Skill 使用，并确保根目录包含：
+**Step1：一段话，让Agent帮你安装Skill的骨架**
+
+把下面这段话直接粘贴给你的Agent：
+```
+帮我把bookkeep skill安装到本地，你需要先把这个代码仓库完成地下载到本地，保存在当前agent的skill根目录。由于每台设备的依赖和网络环境不同，请你自行选择可用的下载命令和镜像源。注意，先完整克隆整个仓库，不要遗漏任何目录和文件。完成克隆后，把该skill的安装路径和目录树及目录树解释发给用户。然后，阅读skill.md和readme.md，等待用户的下一步操作。https://github.com/andy-JustSayWhen/bookkeeping.git
+```
+
+完成安装后，Agent的Skill根目录下，应当有以下文件夹和文件：
+
 
 ```text
 bookkeeping/
@@ -20,8 +26,14 @@ bookkeeping/
 │   └── record.md
 └── backup/
 ```
+**Step2：一段话，让Agent帮你安装Skill的依赖**
+这个记账skill主要依赖飞书CLI完成账本的读写删等功能，如果你此前已经安装并配置了飞书CLI，那么无需重复安装。跳过此步骤，直接看Step3。
 
-首次使用时，按 [SKILL.md](SKILL.md) 的“如何安装”章节配置依赖和飞书多维表格。
+把下面这段话直接粘贴给你的Agent：
+
+```text
+帮我安装飞书CLI，严格按照官方文档的四个步骤。完成安装和验证。https://open.feishu.cn/document/no_class/mcp-archive/feishu-cli-installation-guide.md
+```
 
 ## 必要依赖
 
