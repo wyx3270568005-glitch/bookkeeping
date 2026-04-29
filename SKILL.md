@@ -49,6 +49,10 @@ bookkeeping/
 - 修改目录结构后，应同步更新本章节和 `README.md` 中对应说明。
 
 ## 如何安装
+- agent把整个代码仓库保存到当前agent的Skill根目录下
+- agent安装skill.md内要求的必要依赖
+- agent指定一个飞书多维表格作为《账本》
+- agent在聊天窗口告知用户记账的触发方式，提醒用户可以开始记账
 ### 必要依赖
 
 - RapidOCR。如果agent不是Hermes，agent自动安装其他OCR工具代替；
