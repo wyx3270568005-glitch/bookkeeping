@@ -32,7 +32,9 @@ bookkeeping/
 把下面这段话直接粘贴给你的Agent：
 
 ```text
-帮我安装飞书CLI，严格按照官方文档的四个步骤。完成安装和验证。https://open.feishu.cn/document/no_class/mcp-archive/feishu-cli-installation-guide.md
+帮我安装飞书CLI，严格按照官方文档的四个步骤。完成安装和验证。注意，第2至4步都有链接生成，需要用户点击完成验证。请你把相关链接显示在聊天窗口内显示，提醒用户点击它们完成验证并告诉你已完成，你继续推进流程。整个安装完成后，你需要自行调取飞书CLI完成一次测试，测试内容：向用户返回飞书云文档库的目录树，包含云盘、知识库、我的文档库三个路径在内，每个路径下最多展示3个文档名，其余用 ... 省略。同时，把你首次安装和调用遇到的问题及优化方案保存到skill.md的<## agent调用飞书CLI可能遇到的问题及解决办法>。
+
+飞书CLI安装官方文档：https://open.feishu.cn/document/no_class/mcp-archive/feishu-cli-installation-guide.md
 ```
 
 ## 必要依赖
