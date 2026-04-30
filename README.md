@@ -5,7 +5,10 @@
 它最初由作者在Hermes Agent上随手创建，只依靠一个skill.md也能跑起来。作者的Hermes安装在绿联云DX4600的docker上。作者把Hermes绑定到了飞书和微信等平台作为聊天机器人，通过聊天窗口发送自然语言、结构化字段或带金额的图片时，Agent基于skill.md命中为记账请求后，就能完成记账。在使用过程中，用户可以随时纠正agent，让skill不断进化，做到了真正的“越用越流畅，越用越懂你”。（不是
 ![项目封面](https://github.com/andy-JustSayWhen/feishu-bookkeeping-skill/blob/main/banner.png)
 
-
+## 必要依赖
+模型：推荐小米mimo、GLM等；实测minimax在安装和使用过程中的体验一般，可能会出现一句话安装失败，或者日常记账不能基本遵循skill.md
+Agent：hermes Agent、openclaw、Codex、Claude等智能体都可以
+宿主机：测试期间在macOS或Windows上部署Agent，任何安装这个skill。长期使用推荐把Agent部署在NAS、云服务器等永不关机的低功耗设备上，以便于你随时可以使用Agent和skill。
 ## 如何安装
 安装`skill骨架`＞安装`飞书CLI`＞绑定一个飞书`《账本》`＞开始记账
 ### 一句话安装
@@ -16,8 +19,7 @@
 
 
 ### 手动安装
-
-如果一键安装失败，请按照下述步骤手动推进流程。
+如果一句话安装失败，请按照下述步骤手动推进流程。
 
 --------------
 
