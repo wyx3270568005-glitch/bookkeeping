@@ -1,6 +1,6 @@
-# bookkeeping
+# feishu-bookkeeping-skill
 
-`feishu-bookkeeping` 是一个用于自动记账的 Agent Skill。你只要在任意Agent的聊天窗口发送记账消息，Agent会自动调用飞书CLI在指定的多维表格《账本》内写入记录。
+`feishu-bookkeeping-skill` 是一个用于自动记账的 Agent Skill。你只要在任意Agent的聊天窗口发送记账消息，Agent会自动调用飞书CLI在指定的多维表格《账本》内写入记录。
 
 它最初由作者在Hermes Agent上随手创建，只依靠一个skill.md也能跑起来。作者的Hermes安装在绿联云DX4600的docker上。作者把Hermes绑定到了飞书和微信等平台作为聊天机器人，通过聊天窗口发送自然语言、结构化字段或带金额的图片时，Agent基于skill.md命中为记账请求后，就能完成记账。在使用过程中，用户可以随时纠正agent，让skill不断进化，做到了真正的“越用越流畅，越用越懂你”。（不是
 ![项目封面](https://github.com/andy-JustSayWhen/bookkeeping/blob/main/0dafbd28-a835-4c0a-993a-66437498d81c.png)
@@ -11,7 +11,7 @@
 ### 一句话安装
 把下面这段话直接粘贴给你的Agent：
 ```text
-帮我把bookkeeping skill安装到本地，你需要先把这个代码仓库完成地下载到本地，保存在当前agent的skill根目录。由于每台设备的依赖和网络环境不同，请你自行选择可用的下载命令和镜像源。注意，先完整克隆整个仓库，不要遗漏任何目录和文件。完成克隆后，把该skill的安装路径和目录树及目录树解释发给用户。然后，阅读skill.md和readme.md，自动推进流程，仅在必要时引导用户手动介入。直到Ta完成第一笔记账才视为完全安装成功。https://github.com/andy-JustSayWhen/bookkeeping.git
+帮我把bookkeeping skill安装到本地，你需要先把这个代码仓库完成地下载到本地，保存在当前agent的skill根目录。由于每台设备的依赖和网络环境不同，请你自行选择可用的下载命令和镜像源。注意，先完整克隆整个仓库，不要遗漏任何目录和文件。完成克隆后，把该skill的安装路径和目录树及目录树解释发给用户。然后，阅读skill.md和readme.md，自动推进流程，仅在必要时引导用户手动介入。直到Ta完成第一笔记账才视为完全安装成功。https://github.com/andy-JustSayWhen/feishu-bookkeeping-skill.git
 ```
 
 
@@ -25,7 +25,7 @@
 
 把下面这段话直接粘贴给你的Agent：
 ```text
-帮我把bookkeeping skill安装到本地，你需要先把这个代码仓库完成地下载到本地，保存在当前agent的skill根目录。由于每台设备的依赖和网络环境不同，请你自行选择可用的下载命令和镜像源。注意，先完整克隆整个仓库，不要遗漏任何目录和文件。完成克隆后，把该skill的安装路径和目录树及目录树解释发给用户。然后，阅读skill.md和readme.md，自动推进流程，仅在必要时引导用户手动介入。直到Ta完成第一笔记账才视为完全安装成功。https://github.com/andy-JustSayWhen/bookkeeping.git
+帮我把bookkeeping skill安装到本地，你需要先把这个代码仓库完成地下载到本地，保存在当前agent的skill根目录。由于每台设备的依赖和网络环境不同，请你自行选择可用的下载命令和镜像源。注意，先完整克隆整个仓库，不要遗漏任何目录和文件。完成克隆后，把该skill的安装路径和目录树及目录树解释发给用户。然后，阅读skill.md和readme.md，自动推进流程，仅在必要时引导用户手动介入。直到Ta完成第一笔记账才视为完全安装成功。https://github.com/andy-JustSayWhen/feishu-bookkeeping-skill.git
 ```
 
 完成安装后，在Agent的Skill根目录下，本skill的初始化目录结构如下：
