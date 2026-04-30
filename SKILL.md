@@ -1,7 +1,7 @@
 ---
-name: bookkeeping
+name: feishu-bookkeeping
 description: >-
-  这是一个用于自动记账的Agent Skill，账本保存在飞书多维表格。
+  这是一个用于自动记账的Agent Skill，基于飞书CLI实现，账本保存在飞书指定的多维表格《账本》内。
 triggers:
   - 记账
   - 记一笔
