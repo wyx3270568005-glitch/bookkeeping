@@ -11,7 +11,7 @@
 帮我把bookkeeping skill安装到本地，你需要先把这个代码仓库完成地下载到本地，保存在当前agent的skill根目录。由于每台设备的依赖和网络环境不同，请你自行选择可用的下载命令和镜像源。注意，先完整克隆整个仓库，不要遗漏任何目录和文件。完成克隆后，把该skill的安装路径和目录树及目录树解释发给用户。然后，阅读skill.md和readme.md，等待用户的下一步操作。https://github.com/andy-JustSayWhen/bookkeeping.git
 ```
 
-完成安装后，Agent的Skill根目录下，应当有以下文件夹和文件：
+完成安装后，在Agent的Skill根目录下，本skill的初始化目录结构如下：
 
 
 ```text
@@ -25,6 +25,8 @@ bookkeeping/
 ├── templates/
 │   └── record.md
 └── backup/
+    └── CHG-YYYYMMDD-HHMMSS/
+        └── <原文件相对路径>
 ```
 **Step2：一段话，让Agent帮你安装Skill的依赖**
 这个记账skill主要依赖飞书CLI完成账本的读写删等功能，如果你此前已经安装并配置了飞书CLI，那么无需重复安装。跳过此步骤，直接看Step3。
