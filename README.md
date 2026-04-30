@@ -3,8 +3,8 @@
 `feishu-bookkeeping` 是一个用于自动记账的 Agent Skill。你只要在任意Agent的聊天窗口发送记账消息，Agent会自动调用飞书CLI在指定的多维表格《账本》内写入记录。
 
 它最初由作者在Hermes Agent上随手创建，只依靠一个skill.md也能跑起来。作者的Hermes安装在绿联云DX4600的docker上。作者把Hermes绑定到了飞书和微信等平台作为聊天机器人，通过聊天窗口发送自然语言、结构化字段或带金额的图片时，Agent基于skill.md命中为记账请求后，就能完成记账。在使用过程中，用户可以随时纠正agent，让skill不断进化，做到了真正的“越用越流畅，越用越懂你”。（不是
+![项目封面](https://github.com/andy-JustSayWhen/bookkeeping/blob/main/0dafbd28-a835-4c0a-993a-66437498d81c.png)
 
-https://github.com/andy-JustSayWhen/bookkeeping/blob/main/0dafbd28-a835-4c0a-993a-66437498d81c.png
 
 ## 如何安装
 安装`skill骨架`＞安装`飞书CLI`＞绑定一个飞书`《账本》`＞开始记账
